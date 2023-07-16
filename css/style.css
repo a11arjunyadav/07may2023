@@ -1,0 +1,60 @@
+@font-face {
+    font-family: arjunfonts;
+    src: url(./fonts/alex);
+}
+Body{
+/* margin: T/B L/R; */
+margin:0px ;
+}
+Header ,Footer{ /* combination selector */
+width:100% ;
+Height:100px ;
+font-family: arjunfonts
+;
+border:1px Dashed red;
+}
+main{
+    height: 1200px;
+    border: 2px Dashed green;
+}
+footer{
+height: 200px;/*ooverride /casc */
+font-family: arjunfonts ;
+}
+aside[data-leftaside="left"]{
+    width: 25% ;
+    height: 1200px;
+    border: 1px Dashed #000 ;
+    float: left;
+}
+section[data-section="mysection"]{
+    width: 50% ;
+    height: 1200px;
+    border: 1px dashed black ;
+    float: left;
+}
+aside[data-rightaside="right"]{
+    width: 24% ;
+    height: 1200px;
+    border: 1px Dashed #000 ;
+    float: left;
+}
+/*  comment  */
+/*
+  @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+    CSS-Code;
+}
+*/
+@media only screen and (max-width:600px ){
+    body{
+        background-color: red ;
+    }
+}
+aside[data-rightaside="right"]{
+    width: 23% ;
+}
+@media only screen and (min-width:600px ){
+    body{
+        background-color: green ;
+    }
+}
